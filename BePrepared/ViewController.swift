@@ -12,12 +12,36 @@ import UIKit
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var listTableView: UITableView!
+    
     // データの配列を用意
     //var data: Array<String>
-    var data: [String] = [
-        "両親",
-        "大切な人",
-        "シバター",
+    //var data: Array<Dictionary<String: String>>
+    var data: [[String: String]] = [
+        [
+            "type": "TEL",
+            "who": "両親",
+            "number": "08041681211",
+        ],
+        [
+            "type": "TEL",
+            "who": "大切な人",
+            "number": "08041681211",
+        ],
+        [
+            "type": "TEL",
+            "who": "シバター",
+            "number": "177",
+        ],
+        [
+            "type": "webSite",
+            "keyword": "お腹がいたい時",
+            "URL": "https://www.google.co.jp/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=%E3%81%8A%E8%85%B9%E3%81%8C%E3%81%84%E3%81%9F%E3%81%84%E6%99%82",
+        ],
+        [
+            "type": "webSite",
+            "keyword": "精神的に逃げだしたい時",
+            "URL": "https://www.google.co.jp/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=%E7%B2%BE%E7%A5%9E%E7%9A%84%E3%81%AB%E9%80%83%E3%81%92%E5%87%BA%E3%81%97%E3%81%9F%E3%81%84%E6%99%82",
+        ],
     ]
     
     override func viewDidLoad() {
@@ -37,14 +61,20 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     // セルの数どうする？
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return self.data.count
     }
     
     // セルの中身どうする？
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // cellと名前つけた赤いセルでお願いします
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        cell.textLabel?.text = self.data[indexPath.row]
+        // もしtypeがTELなら、whoをいれる。もしtypeがwebSiteなら、keywordをいれる
+        if self.data[indexPath.row]["type"] == "TEL" {
+            cell.textLabel?.text = self.data[indexPath.row]["who"]
+        }
+        else {
+            cell.textLabel?.text = self.data[indexPath.row]["keyword"]
+        }
         return cell
     }
     

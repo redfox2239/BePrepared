@@ -45,11 +45,31 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="listTableView" destination="2aT-Sn-DS8" id="45I-pq-YFx"/>
+                        <segue destination="Qoz-H7-gmZ" kind="show" id="EAy-OM-Xff"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="620" y="978"/>
+        </scene>
+        <!--検索結果-->
+        <scene sceneID="TkP-Vl-Y20">
+            <objects>
+                <viewController id="Qoz-H7-gmZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x7Y-et-BdT"/>
+                        <viewControllerLayoutGuide type="bottom" id="M6a-FG-YGa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oJN-Vo-fCI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="検索結果" id="NqV-EA-jF4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LV7-RZ-juu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1093" y="1691"/>
         </scene>
         <!--リスト追加-->
         <scene sceneID="Lrh-Pu-hGY">
