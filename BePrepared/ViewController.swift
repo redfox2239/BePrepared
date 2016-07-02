@@ -16,7 +16,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     // データの配列を用意
     //var data: Array<String>
     //var data: Array<Dictionary<String: String>>
-    var data: [[String: String]] = [
+    var data: [[String: String]] = []
+    var initData: [[String: String]] = [
         [
             "type": "TEL",
             "who": "両親",
@@ -51,6 +52,19 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         // tableViewを使う準備その２
         self.listTableView.delegate = self
         self.listTableView.dataSource = self
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        data = []
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let addData = defaults.objectForKey("customData") as? [[String: String]]
+        if addData != nil {
+            data = initData + addData!
+            self.listTableView.reloadData()
+        }
+        else {
+            data = initData
+        }
     }
     
     // tableViewと相談する↓
@@ -95,6 +109,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             // 移動する画面を呼んでくる
             // 新しく追加した画面を保存するときは、as!で保証する
             let next = self.storyboard?.instantiateViewControllerWithIdentifier("検索結果画面") as! WebSiteViewController
+            next.url = self.data[indexPath.row]["URL"]
             // ナビゲーションコントローラーさん、上の呼んできた画面に移動してね
             self.navigationController?.pushViewController(next, animated: true)
         }

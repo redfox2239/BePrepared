@@ -16,6 +16,8 @@
 		7FB1E89F1CF99A1300EFB23B /* BePreparedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1E89E1CF99A1300EFB23B /* BePreparedUITests.swift */; };
 		7FB1E8AD1CF9B31A00EFB23B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1E8AC1CF9B31A00EFB23B /* AddViewController.swift */; };
 		7FBE77F21D27641C0026E8E1 /* WebSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE77F11D27641C0026E8E1 /* WebSiteViewController.swift */; };
+		7FBE77F41D2768390026E8E1 /* AddTelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE77F31D2768390026E8E1 /* AddTelViewController.swift */; };
+		7FBE77F61D2787090026E8E1 /* AddKeywordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE77F51D2787090026E8E1 /* AddKeywordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		7FB1E8A01CF99A1300EFB23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FB1E8AC1CF9B31A00EFB23B /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		7FBE77F11D27641C0026E8E1 /* WebSiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSiteViewController.swift; sourceTree = "<group>"; };
+		7FBE77F31D2768390026E8E1 /* AddTelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTelViewController.swift; sourceTree = "<group>"; };
+		7FBE77F51D2787090026E8E1 /* AddKeywordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddKeywordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				7FB1E88A1CF99A1200EFB23B /* Info.plist */,
 				7FB1E8AC1CF9B31A00EFB23B /* AddViewController.swift */,
 				7FBE77F11D27641C0026E8E1 /* WebSiteViewController.swift */,
+				7FBE77F31D2768390026E8E1 /* AddTelViewController.swift */,
+				7FBE77F51D2787090026E8E1 /* AddKeywordViewController.swift */,
 			);
 			path = BePrepared;
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FBE77F21D27641C0026E8E1 /* WebSiteViewController.swift in Sources */,
+				7FBE77F41D2768390026E8E1 /* AddTelViewController.swift in Sources */,
+				7FBE77F61D2787090026E8E1 /* AddKeywordViewController.swift in Sources */,
 				7FB1E8811CF99A1200EFB23B /* ViewController.swift in Sources */,
 				7FB1E87F1CF99A1200EFB23B /* AppDelegate.swift in Sources */,
 				7FB1E8AD1CF9B31A00EFB23B /* AddViewController.swift in Sources */,

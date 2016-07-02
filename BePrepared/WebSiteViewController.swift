@@ -11,6 +11,7 @@ import UIKit
 class WebSiteViewController: UIViewController {
 
     @IBOutlet weak var searchResult: UIWebView!
+    var url: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,7 @@ class WebSiteViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // URLを指定する
-        let url = "https://www.google.co.jp/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=%E3%81%8A%E8%85%B9%E3%81%8C%E3%81%84%E3%81%9F%E3%81%84%E6%99%82"
+        let url = self.url
         // iPhoneが分かる形に翻訳する
         let nsurl = NSURL(string: url)
         // 上のURLのページをリクエストする
