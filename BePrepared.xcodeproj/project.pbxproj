@@ -15,6 +15,7 @@
 		7FB1E8941CF99A1300EFB23B /* BePreparedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1E8931CF99A1300EFB23B /* BePreparedTests.swift */; };
 		7FB1E89F1CF99A1300EFB23B /* BePreparedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1E89E1CF99A1300EFB23B /* BePreparedUITests.swift */; };
 		7FB1E8AD1CF9B31A00EFB23B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1E8AC1CF9B31A00EFB23B /* AddViewController.swift */; };
+		7FBE77F21D27641C0026E8E1 /* WebSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE77F11D27641C0026E8E1 /* WebSiteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7FB1E89E1CF99A1300EFB23B /* BePreparedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BePreparedUITests.swift; sourceTree = "<group>"; };
 		7FB1E8A01CF99A1300EFB23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FB1E8AC1CF9B31A00EFB23B /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		7FBE77F11D27641C0026E8E1 /* WebSiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSiteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				7FB1E8871CF99A1200EFB23B /* LaunchScreen.storyboard */,
 				7FB1E88A1CF99A1200EFB23B /* Info.plist */,
 				7FB1E8AC1CF9B31A00EFB23B /* AddViewController.swift */,
+				7FBE77F11D27641C0026E8E1 /* WebSiteViewController.swift */,
 			);
 			path = BePrepared;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FBE77F21D27641C0026E8E1 /* WebSiteViewController.swift in Sources */,
 				7FB1E8811CF99A1200EFB23B /* ViewController.swift in Sources */,
 				7FB1E87F1CF99A1200EFB23B /* AppDelegate.swift in Sources */,
 				7FB1E8AD1CF9B31A00EFB23B /* AddViewController.swift in Sources */,
@@ -408,7 +412,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BePrepared/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = AppAcademia.BePrepared;
+				PRODUCT_BUNDLE_IDENTIFIER = AppAcademia.BePrepare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -422,7 +426,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BePrepared/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = AppAcademia.BePrepared;
+				PRODUCT_BUNDLE_IDENTIFIER = AppAcademia.BePrepare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -493,6 +497,7 @@
 				7FB1E8A51CF99A1300EFB23B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FB1E8A61CF99A1300EFB23B /* Build configuration list for PBXNativeTarget "BePreparedTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +506,7 @@
 				7FB1E8A81CF99A1300EFB23B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FB1E8A91CF99A1300EFB23B /* Build configuration list for PBXNativeTarget "BePreparedUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +515,7 @@
 				7FB1E8AB1CF99A1300EFB23B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

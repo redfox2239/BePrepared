@@ -80,13 +80,24 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     // セルを選んだ時どうする？
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // 電話かける
-        // 電話番号
-        let telNumber = "tel://08041681211"
-        // iPhoneが分かる形に翻訳します
-        let nsurl = NSURL(string: telNumber)
-        // 上の番号で電話してね
-        UIApplication.sharedApplication().openURL(nsurl!)
+        // もしtypeがTELなら電話して、typeがwebSiteなら画面遷移して
+        if self.data[indexPath.row]["type"] == "TEL" {
+            // 電話かける
+            // 電話番号
+            let telNumber = "tel://08041681211"
+            // iPhoneが分かる形に翻訳します
+            let nsurl = NSURL(string: telNumber)
+            // 上の番号で電話してね
+            UIApplication.sharedApplication().openURL(nsurl!)
+        }
+        else {
+            // 画面移動する
+            // 移動する画面を呼んでくる
+            // 新しく追加した画面を保存するときは、as!で保証する
+            let next = self.storyboard?.instantiateViewControllerWithIdentifier("検索結果画面") as! WebSiteViewController
+            // ナビゲーションコントローラーさん、上の呼んできた画面に移動してね
+            self.navigationController?.pushViewController(next, animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {
